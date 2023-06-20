@@ -1,0 +1,20 @@
+header, footer {
+    display: flex;
+    background-color: blue;
+    color: white;
+    height: 50px;
+}
+
+header {
+    display: flex;
+    border-top: solid rgb(6, 0, 0) 2px;
+    border-bottom: solid rgb(8, 1, 1) 2px;
+}
+
+footer {
+    display: flex;
+    margin-top: 50px;
+    border-top: solid blue 2px;
+    border-bottom: solid blue 2px;
+}
+

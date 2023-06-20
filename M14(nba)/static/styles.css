@@ -1,0 +1,43 @@
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .buttons button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #4c6baf;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .buttons button:hover {
+    background-color: #3e4f8e;
+  }
+  
+  header, footer {
+
+    align-items: center;
+      background-color: blue;
+      color: white;
+      height: 50px;
+  }
+  
+  header {
+      border-top: solid rgb(2, 0, 8) 2px;
+      border-bottom: solid rgb(1, 0, 10) 2px;
+  }
+  
+  footer {
+      margin-top: 50px;
+      border-top: solid blue 2px;
+      border-bottom: solid blue 2px;
+  }
+
+
+  

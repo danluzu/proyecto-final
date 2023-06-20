@@ -1,0 +1,112 @@
+body {
+    background-color: #F0F0F0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #4d3ae1;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  select {
+    width: 250px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  button {
+    background-color: #E13A3E;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #3221b7;
+  }
+  
+  img {
+    display: block;
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  
+  /* Add additional styling classes for each NBA team */
+  .Lac {
+    border: 3px solid #1D428A;
+  }
+  
+  .Pho {
+    border: 3px solid #E56020;
+  }
+  
+  .Min {
+    border: 3px solid #0C2340;
+  }
+  
+  .Gol {
+    border: 3px solid #1D428A;
+  }
+  
+  .Mia {
+    border: 3px solid #98002E;
+  }
+  
+  .Den {
+    border: 3px solid #0C2340;
+  }
+  
+  .Atl {
+    border: 3px solid #E13A3E;
+  }
+  
+  .Bos {
+    border: 3px solid #007A33;
+  }
+  
+  .Nyk {
+    border: 3px solid #006BB6;
+  }
+  
+  .Sac {
+    border: 3px solid #5A2D81;
+  }
+  
+  .Mem {
+    border: 3px solid #0F586C;
+  }
+  
+  .Lal {
+    border: 3px solid #552583;
+  }
+  
+  .Phi {
+    border: 3px solid #006BB6;
+  }
+  
+  .Cle {
+    border: 3px solid #6F263D;
+  }
+  
+  .Bro {
+    border: 3px solid #000000;
+  }
+  
+  .Mil {
+    border: 3px solid #00471B;
+  }
+
+  .container {
+    
+  }

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles3.css') }}">
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form action="/formulario" method="POST"><!-- el metodo post servira para que pueda mostrar lo que le pedimos al formulario -->
+        <select name="opciones">
+            <div class="container">
+                <div class="logo">
+                    <img src="{{ url_for('static', filename='nba_logo.png') }}" alt="NBA Logo">
+          <!-- el valor que le daremos a nuestro formulario sera las imagenes quequeremos mostrar -->
+              <option value="lac"><img src="/static/graficas/Figure_1.png" class="Lac">Lac</option>
+              <option value="pho"><img src="/static/graficas/Figure_2.png" class="Pho">Pho</option>
+              <option value="min"><img src="/static/graficas/Figure_3.png" class="Min">Min</option>
+              <option value="gol"><img src="/static/graficas/Figure_4.png" class="Gol">Gol</option>
+              <option value="mia"><img src="/static/graficas/Figure_5.png" class="Mia">Mia</option>
+              <option value="den"><img src="/static/graficas/Figure_6.png" class="Den">Den</option>
+              <option value="atl"><img src="/static/graficas/Figure_7.png" class="Atl">Atl</option>
+              <option value="bos"><img src="/static/graficas/Figure_8.png" class="Bos">Bos</option>
+              <option value="nyk"><img src="/static/graficas/Figure_9.png" class="Nyk">Nyk</option>
+              <option value="sac"><img src="/static/graficas/Figure_10.png" class="Sac">Sac</option>
+              <option value="mem"><img src="/static/graficas/Figure_11.png" class="Mem">Mem</option>
+              <option value="lal"><img src="/static/graficas/Figure_12.png" class="Lal">Lal</option>
+              <option value="phi"><img src="/static/graficas/Figure_13.png" class="Phi">Phi</option>
+              <option value="cle"><img src="/static/graficas/Figure_14.png" class="Cle">Cle</option>
+              <option value="bro"><img src="/static/graficas/Figure_15.png" class="Bro">Bro</option>
+              <option value="mil"><img src="/static/graficas/Figure_16.png" class="Mil">Mil</option>
+        </select>
+        <button class="button" type="submit">Enviar</button>
+      </form>
+
+    {% if imagen %}
+    <!-- <h3>Imagen seleccionada:</h3> -->
+    {% if imagen == 'lac' %}
+    <img src="/static/graficas/Figure_1.png" class="Lac">
+    {% elif imagen == 'pho' %}
+    <img src="/static/graficas/Figure_2.png" class="Pho">
+    {% elif imagen == 'min' %}
+    <img src="/static/graficas/Figure_3.png" class="Min">
+    {% elif imagen == 'gol' %}
+    <img src="/static/graficas/Figure_4.png" class="Gol">
+    {% elif imagen == 'mia' %}
+    <img src="/static/graficas/Figure_5.png" class="Mia">
+    {% elif imagen == 'den' %}
+    <img src="/static/graficas/Figure_6.png" class="Den">
+    {% elif imagen == 'atl' %}
+    <img src="/static/graficas/Figure_7.png" class="Atl">
+    {% elif imagen == 'bos' %}
+    <img src="/static/graficas/Figure_8.png" class="Bos">
+    {% elif imagen == 'nyk' %}
+    <img src="/static/graficas/Figure_9.png" class="Nyk">
+    {% elif imagen == 'sac' %}
+    <img src="/static/graficas/Figure_10.png" class="Sac">
+    {% elif imagen == 'mem' %}
+    <img src="/static/graficas/Figure_11.png" class="Mem">
+    {% elif imagen == 'lal' %}
+    <img src="/static/graficas/Figure_12.png" class="Lal">
+    {% elif imagen == 'phi' %}
+    <img src="/static/graficas/Figure_13.png" class="Phi">
+    {% elif imagen == 'cle' %}
+    <img src="/static/graficas/Figure_14.png" class="Cle">
+    {% elif imagen == 'bro' %}
+    <img src="/static/graficas/Figure_15.png" class="Bro">
+    {% elif imagen == 'mil' %}
+    <img src="/static/graficas/Figure_16.png" class="Mil">
+    {% endif %}
+    {% endif %}   
+    
+    
+    <form action="/formulario" method="POST">
+    <h1>Informacion CSV<h1>
+    {{ data }} 
+                 
+</body>
+</html>
+
+
+
+
